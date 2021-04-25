@@ -24,7 +24,7 @@ class WeekWorker extends  Employee {
 class DayWorker extends Employee{
     @Override
     public double earnings() {
-        return 100;
+        return 365*100;
     }
 }
 class Company {
