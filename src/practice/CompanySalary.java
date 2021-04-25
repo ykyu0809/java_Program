@@ -51,6 +51,6 @@ public class CompanySalary {
             else if (i%4==3) employee[i]=new DayWorker();
         }
         Company company=new Company(employee);
-        System.out.println("公司薪水总额"+company.salariesPay()+"元");
+        System.out.println("公司薪水总额"+company.salariesPay()+" 元");
     }
 }
