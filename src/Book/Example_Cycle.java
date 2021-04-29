@@ -28,7 +28,7 @@ class Trycycle extends Cycle{
     }
 }
 
-public class Example1{
+public class Example_Cycle{
     public static void main(String args[]){
         Cycle cycle;
         Unicycle a = new Unicycle();
