@@ -53,7 +53,7 @@ public class Example1{
             System.out.println("c是Trycycle类的对象");
         }
         else {
-            System.out.println("c不是Trycycle类1的对象");
+            System.out.println("c不是Trycycle类的对象");
         }
     }
 }
