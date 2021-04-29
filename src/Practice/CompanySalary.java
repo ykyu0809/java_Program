@@ -1,4 +1,4 @@
-package practice;
+package Practice;
 
 abstract class Employee {
     public abstract double earnings();
