@@ -3,6 +3,7 @@ package Book.JFrame;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Calendar;
 import java.util.Date;
 
 public class ShowCalander extends JFrame {
@@ -10,9 +11,10 @@ public class ShowCalander extends JFrame {
         setLayout(null);
         setTitle(title);
 
+        Calendar now = Calendar.getInstance();
         CalendarBean cb = new CalendarBean();
-        cb.setMonth(5);
-        cb.setYear(2021);
+        cb.setMonth(now.get(Calendar.MONTH)+1);
+        cb.setYear(now.get(Calendar.YEAR));
         String [] a = cb.getCalendar();
         char [] str = "日一二三四五六".toCharArray();
 
