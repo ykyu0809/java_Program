@@ -14,5 +14,9 @@ public class MyFrame {
         windows2.setVisible(true);
         windows3.setBounds(620,320,400,100);
         windows3.setVisible(true);
+        ShowCalander windows4;
+        windows4 = new ShowCalander("日历");
+        windows4.setVisible(true);
+        windows4.setBounds(600,300,400,400);
     }
 }

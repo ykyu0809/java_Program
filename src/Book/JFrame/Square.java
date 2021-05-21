@@ -8,7 +8,6 @@ import java.util.Date;
 
 public class Square extends JFrame {
     Square(String title){
-        JFrame win = new JFrame();
         setLayout(null);
         setTitle(title);
         JTextField text = new JTextField();
