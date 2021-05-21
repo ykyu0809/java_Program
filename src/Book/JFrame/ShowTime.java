@@ -12,10 +12,10 @@ public class ShowTime extends JFrame{
         JButton button1 = new JButton("点击显示时间");
         Date nowTime = new Date();
         add(button1);
-        button1.setBounds(20,10,120,30);
+        button1.setBounds(20,10,100,40);
         JLabel label1 = new JLabel("时间会在这出现哦");
         add(label1);
-        label1.setBounds(150,10,250,30);
+        label1.setBounds(140,10,240,40);
         ActionListener listener1 = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
