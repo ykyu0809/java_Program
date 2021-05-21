@@ -3,10 +3,7 @@ package Book.JFrame;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Arrays;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 
 public class ShowCalander extends JFrame {
     ShowCalander(String title){
@@ -28,23 +25,22 @@ public class ShowCalander extends JFrame {
         label4.setBounds(160,10,220,30);
         JTextArea text2 = new JTextArea();
         add(text2);
-        text2.setBounds(0,50,400,300);
+        text2.setBounds(10,60,380,300);
         text2.setEditable(false);
         text2.setOpaque(false);
         text2.setLineWrap(true);
         ActionListener listener4 = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                StringBuffer s = new StringBuffer();
                 label4.setText(nowTime.toString());
                 for (char c : str){
-                    text2.append("    "+c+"           ");
+                    text2.append("    "+c+"          ");
                 }
-                text2.append("\r\n"+"   ");
+                text2.append("\r\n"+"");
                 for (int i=0;i<a.length;i++){
                     if(i%7==0) text2.append("\r\n\r\n");
-                    if(i<10)  text2.append("       "+a[i]+"          ");
-                    else text2.append("      "+a[i]+"        ");
+                    if(i<10)  text2.append("        "+a[i]+"        ");
+                    else if(i>=10) text2.append("       "+a[i]+"      ");
                 }
             }
         };
