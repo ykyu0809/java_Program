@@ -1,7 +1,8 @@
-package Book;
+package Book.Cycle;
 
 abstract class Cycle {
     public abstract void ride();
+    public abstract void wheel();
 }
 
 class Unicycle extends Cycle{
@@ -9,6 +10,11 @@ class Unicycle extends Cycle{
     public void ride() {
         Cycle cycle;
         cycle = new Unicycle();
+    }
+
+    @Override
+    public void wheel() {
+        System.out.println("Unicycle有1个轮子");
     }
 }
 
@@ -18,6 +24,11 @@ class Bycycle extends Cycle{
         Cycle cycle;
         cycle = new Bycycle();
     }
+
+    @Override
+    public void wheel() {
+        System.out.println("Bycycle有2个轮子");
+    }
 }
 
 class Trycycle extends Cycle{
@@ -25,6 +36,20 @@ class Trycycle extends Cycle{
     public void ride() {
         Cycle cycle;
         cycle = new Trycycle();
+    }
+
+    @Override
+    public void wheel() {
+        System.out.println("Trycycle有3个轮子");
+    }
+}
+
+class People{
+    String name;
+    int age;
+    @Override
+    public String toString() {
+        return name + age;
     }
 }
 
@@ -55,5 +80,12 @@ public class Example_Cycle{
         else {
             System.out.println("c不是Trycycle类的对象");
         }
+        a.wheel();
+        b.wheel();
+        c.wheel();
+        People p = new People();
+        p.name="李华";
+        p.age=18;
+        System.out.println(p);
     }
 }
