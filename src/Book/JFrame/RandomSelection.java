@@ -13,12 +13,12 @@ public class RandomSelection extends JFrame{
         JButton button2 = new JButton("随机选人");
         Date nowTime = new Date();
         add(button2);
-        button2.setBounds(20,10,100,40);
+        button2.setBounds(20,10,120,40);
         JLabel label2 = new JLabel("号次会在这出现哦");
         add(label2);
         Random random = new Random();
         int a = random.nextInt(36)+1;
-        label2.setBounds(140,10,240,40);
+        label2.setBounds(160,10,220,40);
         ActionListener listener2 = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
