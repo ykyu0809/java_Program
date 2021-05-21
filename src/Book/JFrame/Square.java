@@ -18,7 +18,7 @@ public class Square extends JFrame {
         label3.setBounds(150,10,250,30);
         ActionListener listener3 = new ActionListener() {
             String m = text.getText();
-            double n = Math.sqrt(1);
+            double n = Math.sqrt(Double.parseDouble(m));
             @Override
             public void actionPerformed(ActionEvent e) {
                 label3.setText(m+"开根的值为"+n);
